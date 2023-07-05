@@ -1,11 +1,12 @@
 import Chart from 'react-apexcharts';
+import { ApexOptions } from "apexcharts";
 import { DonutType } from './type';
 
 const DonutBasic = ({countries, colors, percentArr} : DonutType) => {
 
     const series = percentArr;
 
-    const options = {
+    const options : ApexOptions = {
         chart: {
           type: 'donut',
           width : 250,
@@ -35,7 +36,10 @@ const DonutBasic = ({countries, colors, percentArr} : DonutType) => {
       }
   return (
     <div>
-        <Chart options={options} series={series} type="donut"/>
+        <Chart 
+        options={options} 
+        series={series} 
+        type="donut"/>
     </div>
   )
 }

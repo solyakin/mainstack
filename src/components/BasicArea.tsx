@@ -2,8 +2,9 @@
 import { useState } from "react"
 import Chart from "react-apexcharts";
 import { AreaGraphType } from "./type";
+import { ApexOptions } from "apexcharts";
 
-const BasicArea = ({ views, dateTime } : AreaGraphType) => {
+const BasicArea = ({ views, dateTime } : AreaGraphType ) => {
 
     const [series] = useState([
       {
@@ -12,11 +13,10 @@ const BasicArea = ({ views, dateTime } : AreaGraphType) => {
       }
     ])
 
-    const [options] = useState(
+    const options : ApexOptions =
          {
             chart: {
               height: 350,
-              type: 'area',
               toolbar : {
                 show : false
               }
@@ -44,14 +44,13 @@ const BasicArea = ({ views, dateTime } : AreaGraphType) => {
                 format: 'dd/MM/yy HH:mm'
               },
             },
-            padding: {
-                top: 0,
-                right: 0,
-                bottom: 0,
-                left: 0,
-            },
-        },
-    )
+            // padding: {
+            //     top: 0,
+            //     right: 0,
+            //     bottom: 0,
+            //     left: 0,
+            // },
+        }
     
   return (
     <div data-testid="area-1">

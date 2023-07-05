@@ -1,0 +1,15 @@
+/* eslint-disable react-refresh/only-export-components */
+
+export { default as mainstackLogo } from '../images/mainstack-logo.svg'
+export { default as info } from '../images/info.svg'
+export { default as Nigeria } from '../images/nigeria.svg'
+export { default as USA } from '../images/usa.svg'
+export { default as Netherland } from '../images/netherland.svg'
+export { default as Andoras } from '../images/andorra.svg'
+export { default as Finland } from '../images/Finland.webp'
+export { default as facebook } from '../images/facebook.svg'
+export { default as twitter } from '../images/twitter.svg'
+export { default as linkedin } from '../images/linkedin.svg'
+export { default as instagram } from '../images/instagram.svg'
+export { default as google } from '../images/google.png'
+export { default as user } from '../images/image.svg'
